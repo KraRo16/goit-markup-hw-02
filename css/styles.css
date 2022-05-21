@@ -2,6 +2,8 @@
     --primary-font-family: 'Roboto', sans-serif;
     --secondary-font-family: 'Raleway', sans-serif;
     --accent-color: #2196F3;
+    --secondary-accent-color: #212121;
+    --third-accent-color: #757575;
     --primary-logo-color-theme-light: #000000;
     --primary-logo-color-theme-dark: #FFFFFF;
 }
@@ -11,6 +13,14 @@
 }
 .link {
     text-decoration: none;
+}
+
+.hero,
+.footer {
+    background-color: #2F303A;
+}
+.employees-section {
+    color:#F5F4FA;
 }
 body {
     font-family: var(--primary-font-family);
@@ -23,7 +33,7 @@ body {
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: var(--secondary-accent-color);
 }
 /*=========== /COMPONENTS ===========*/
 
@@ -47,18 +57,21 @@ body {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: #212121;
+        color: var(--secondary-accent-color);
 }
 .menu-link:hover,
 .menu-link:focus {
     color: var(--accent-color);
+}
+.menu-link:active {
+    color:var(--accent-color)
 }
 .header-contact-link {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: #757575;
+        color: var(--third-accent-color);
 }
 .header-contact-link:hover,
 .header-contact-link:focus {
@@ -75,9 +88,10 @@ body {
         letter-spacing: 0.06em;
         text-transform: uppercase;
     
-       /* color: #FFFFFF;*/
+        color: #FFFFFF;
 }
 .hero-modal-btn {
+    font-family: inherit;    
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
@@ -85,8 +99,9 @@ body {
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
-          color: #FFFFFF;
-          background-color: #2196F3;
+         color: #FFFFFF;
+        background-color: #2196F3;
+        cursor: pointer;
 }
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
@@ -101,12 +116,95 @@ body {
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #212121;
+        color: var(--secondary-accent-color);
 }
 .advantages-list-description {
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-          color: #757575;
+        color: var(--third-accent-color);
+}
+/*=========== /ADVANTAGES ===========*/
+
+/*=========== WHAT WE DO ===========*/
+
+/*=========== /WHAT WE DO ===========*/
+
+/*=========== OUR TEAM ===========*/
+.employees-name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+}
+.employees-position {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+         color: #757575;
+}
+/*=========== /OUR TEAM ===========*/
+
+/*=========== FILTER ===========*/
+.filter-modal-btn-link {
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--secondary-accent-color);
+        background: #F5F4FA;
+        border-radius: 4px;
+        cursor: pointer;
+}
+.filter-modal-btn-link:hover,
+.filter-modal-btn-link:focus {
+    color: #FFFFFF;
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px
+}
+/*=========== /FILTER ===========*/
+
+/*=========== PORTFOLIO ===========*/
+.portfolio-name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: #212121;
+}
+.portfolio-filter {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        color: #757575;
+}
+/*=========== /PORTFOLIO ===========*/
+
+
+/*=========== FOOTER ===========*/
+/*=========== CONTACT INFORMATION ===========*/
+.contact-list-map-link {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+}
+.contact-list-link {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
 }
